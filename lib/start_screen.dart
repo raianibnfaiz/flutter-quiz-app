@@ -14,7 +14,7 @@ class StartScreen extends StatelessWidget {
           SizedBox(height: 80),
           Text("Quiz App",style: TextStyle(color: Color.fromARGB(255, 237, 223, 252),fontSize: 30)),
           SizedBox(height: 80),
-          OutlinedButton(onPressed: () {},
+          OutlinedButton.icon(onPressed: () {},
                 style: OutlinedButton.styleFrom(
                 side: BorderSide(width: 2.0, color: Color.fromARGB(255, 137, 223, 252)),
                 shape: RoundedRectangleBorder(
@@ -22,7 +22,8 @@ class StartScreen extends StatelessWidget {
                 ),
               ),
 
-              child: Text("Start Quiz",style: TextStyle(color: Color.fromARGB(255, 237, 223, 252),fontSize: 16),
+              icon: Icon(Icons.play_arrow,color: Color.fromARGB(255, 237, 223, 252),),
+              label: Text("Start Quiz",style: TextStyle(color: Color.fromARGB(255, 237, 223, 252),fontSize: 16),
               )
           )
     ],),);
